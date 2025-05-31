@@ -17,3 +17,7 @@ pip install -e .
 huggingface-cli download  Qwen/Qwen3-0.6B
 
 vllm serve Qwen/Qwen3-0.6B
+
+
+- Known issue : SM120 - incompability
+    - https://github.com/lllyasviel/Fooocus/issues/3862
