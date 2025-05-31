@@ -27,3 +27,27 @@ curl -X POST http://localhost:7860/v1/chat/completions -H "Content-Type: applica
 
 
 - https://github.com/yachty66/gpu-benchmark/blob/main/src/gpu_benchmark/benchmarks/qwen3_0_6b.py
+
+
+
+- For  Qwen/Qwen3-30B-A3B-GGUF
+  - huggingface-cli download Qwen/Qwen3-30B-A3B-GGUF --local-dir hf_models/
+  - ./build/bin/llama-server --model ./hf_models/Qwen3-30B-A3B-Q8_0.gguf --host 0.0.0.0 --port 7860 --n-gpu-layers 99 --threads 1 --ctx-size 32768 --batch-size 512
+
+  Qwen3-30B-A3B-Q4_K_M.gguf , Qwen3-0.6B-Q8_0.gguf , Qwen3-30B-A3B-Q5_0.gguf ,Qwen3-30B-A3B-Q4_K_M.gguf, Qwen3-30B-A3B-Q8_0.gguf ,Qwen3-30B-A3B-Q5_K_M.gguf, Qwen3-30B-A3B-Q6_K.gguf
+
+
+- For - Qwen/Qwen3-4B-GGUF
+ - mkdir hf_model_4b
+ - huggingface-cli download Qwen/Qwen3-4B-GGUF --local-dir hf_model_4b/
+ - Qwen3-4B-Q4_K_M.gguf , Qwen3-4B-Q5_0.gguf, Qwen3-4B-Q8_0.gguf, Qwen3-4B-Q6_K.gguf, Qwen3-4B-Q5_K_M.gguf
+-  ./build/bin/llama-server --model ./hf_model_4b/Qwen3-4B-Q4_K_M.gguf --host 0.0.0.0 --port 7860 --n-gpu-layers 99 --threads 1 --ctx-size 32768 --batch-size 512
+
+- For - Qwen/Qwen3-14B-GGUF
+  - mkdir hf_model_14b
+  - huggingface-cli download Qwen/Qwen3-14B-GGUF --local-dir hf_model_14b/
+  - Qwen3-14B-Q5_0.gguf , Qwen3-14B-Q6_K.gguf ,Qwen3-14B-Q4_K_M.gguf , Qwen3-14B-Q5_K_M.gguf , Qwen3-14B-Q8_0.gguf,  params
+ - 16 GB
+  - ./build/bin/llama-server --model ./hf_model_14b/Qwen3-14B-Q4_K_M.gguf --host 0.0.0.0 --port 7860 --n-gpu-layers 99 --threads 1 --ctx-size 32768 --batch-size 512
+- 22 GB 
+./build/bin/llama-server --model ./hf_model_14b/Qwen3-14B-Q8_0.gguf --host 0.0.0.0 --port 7860 --n-gpu-layers 99 --threads 1 --ctx-size 32768 --batch-size 512
