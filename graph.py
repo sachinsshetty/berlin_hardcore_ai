@@ -4,7 +4,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 # Read the CSV file
 try:
-    df = pd.read_csv("benchmark_results.csv")
+    df = pd.read_csv("result2.csv")
 except FileNotFoundError:
     print("Error: 'benchmark_results.csv' not found. Ensure the file is in the correct directory.")
     exit()
@@ -50,7 +50,7 @@ cbar = plt.colorbar(sc, pad=0.1)
 cbar.set_label('Temperature')
 
 # Save the plot to a file
-plt.savefig('gpu_benchmark_3d_plot.png', dpi=300, bbox_inches='tight')
+plt.savefig('gpu_benchmark_3d_plot_2.png', dpi=300, bbox_inches='tight')
 print("Plot saved as 'gpu_benchmark_3d_plot.png' in the current directory.")
 
 # Close the figure to free memory
