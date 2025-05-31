@@ -1,8 +1,10 @@
 GPUs Brrr
+- apt update && apt upgrade
+- apt install -y cmake libcurl4-openssl-dev
 
 - Setup llama.cpp to run Qwen3-0.6B
   - git clone https://github.com/ggml-org/llama.cpp.git
-cd llama.cpp
+- cd llama.cpp
 
 cmake -B build -DGGML_CUDA=ON
 
