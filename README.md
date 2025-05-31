@@ -1,5 +1,7 @@
 GPUs Brrr
 
+./build/bin/llama-server --model hf_models/Qwen3-0.6B-Q8_0.gguf --host 127.0.0.1 --port 7860 --n-gpu-layers 100 --threads 4 --ctx-size 4096 --batch-size 256
+
 - Event - Berlin Harcore AI Hackathon 2025
 - Date - 31-May - 1 June 2025
 
