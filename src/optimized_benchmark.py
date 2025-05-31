@@ -15,9 +15,9 @@ SERVER_URL = "http://localhost:7860/v1/chat/completions"
 DURATION_SECONDS = 60  # Shorter for faster sweeps
 
 # Hyperparameter grid
-BATCH_SIZES = [64, 128, 256, 512]
-MAX_TOKENS_LIST = [32, 64, 128, 256]
-TEMPERATURES = [0.5, 0.7, 1.0]
+BATCH_SIZES = [64, 128]
+MAX_TOKENS_LIST = [128, 256]
+TEMPERATURES = [0.5, 0.7]
 
 CSV_FILE = "benchmark_results.csv"
 
