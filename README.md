@@ -2,7 +2,7 @@ GPUs Brrr - dwani.ai melting GH200
 
 
 - Project Setup
-  - - Setup llama.cpp to run Qwen3-0.6B
+  - Setup llama.cpp to run Qwen3-0.6B
 
 ```bash
 apt update && apt upgrade
@@ -59,6 +59,11 @@ huggingface-cli download Qwen/Qwen3-14B-GGUF --local-dir hf_model_14b/
 
 ./build/bin/llama-server --model ./hf_model_14b/Qwen3-14B-Q8_0.gguf --host 0.0.0.0 --port 7860 --n-gpu-layers 99 --threads 1 --ctx-size 32768 --batch-size 512
 ``` 
+
+
+
+- Tensort RT LLM setup
+ - See [another-experiment.md](another-experiment.md)
 
 <!--
 
