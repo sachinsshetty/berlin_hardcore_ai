@@ -7,7 +7,7 @@ pynvml.nvmlInit()
 gpu_handle = pynvml.nvmlDeviceGetHandleByIndex(0)
 
 # Server configuration
-SERVER_URL = "http://localhost:7860/v1/chat/completions"
+SERVER_URL = "http://localhost:7890/v1/chat/completions"
 BATCH_SIZE = 512
 MAX_TOKENS = 100
 TEMPERATURE = 0.7
@@ -22,7 +22,7 @@ def benchmark():
         # Prepare batch requests
         for _ in range(BATCH_SIZE):
             payload = {
-                "model": "Qwen3-0.6B-Q8_0",
+                "model": "google/gemma-3-1b-it",
                 "messages": [{"role": "user", "content": "Hello, how are you?"}],
                 "max_tokens": MAX_TOKENS,
                 "temperature": TEMPERATURE
