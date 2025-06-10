@@ -11,7 +11,7 @@ SERVER_URL = "http://localhost:7890/v1/chat/completions"
 BATCH_SIZE = 512
 MAX_TOKENS = 100
 TEMPERATURE = 0.7
-DURATION_SECONDS = 300
+DURATION_SECONDS = 30
 
 def benchmark():
     start_time = time.time()
