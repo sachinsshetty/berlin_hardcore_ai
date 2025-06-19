@@ -2,8 +2,15 @@ GPUs Brrr - dwani.ai melting GH200
 
 Results - 
 
-gh200
-vllm - 179 tok/sec , 181 tok/sec
+- gh200
+  - google/gemma-3-4b-it 
+    - 179 tok/sec , 181 tok/sec
+  - google/gemma-3-1b-it 
+    - Tokens per second: 51.24
+  - Qwen/Qwen3-0.6B
+    - Tokens per second: 220.82
+
+
 llama.cpp - 
 - Qwen/Qwen3-0.6B  
     - Tokens per second: 206.24, GPU Utilization (%): 40
