@@ -8,7 +8,7 @@ gpu_handle = pynvml.nvmlDeviceGetHandleByIndex(0)
 
 # Server configuration
 SERVER_URL = "http://localhost:9000/v1/chat/completions"
-BATCH_SIZE = 10
+BATCH_SIZE = 512
 #BATCH_SIZE = 512
 MAX_TOKENS = 100
 TEMPERATURE = 0.7

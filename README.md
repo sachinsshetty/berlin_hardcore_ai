@@ -1,5 +1,19 @@
 GPUs Brrr - dwani.ai melting GH200 
 
+
+Results - 
+
+gh200
+vllm - 179 tok/sec
+llama.cpp - 
+
+h100
+
+5090
+
+T4 
+
+
 ```bash
 python3.10 -m venv venv
 source venv/bin/activate
