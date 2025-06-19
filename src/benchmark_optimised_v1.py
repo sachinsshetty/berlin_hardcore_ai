@@ -12,7 +12,7 @@ gpu_handle = pynvml.nvmlDeviceGetHandleByIndex(0)
 
 # Server configuration
 SERVER_URL = "http://localhost:9000/v1/chat/completions"
-DURATION_SECONDS = 60  # Shorter for faster sweeps
+DURATION_SECONDS = 10  # Shorter for faster sweeps
 
 # Hyperparameter grid
 BATCH_SIZES = [64, 128]
