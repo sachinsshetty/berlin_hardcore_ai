@@ -1,5 +1,14 @@
 GPUs Brrr - dwani.ai melting GH200 
 
+```bash
+python3.10 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python src/simple_benchmark.py
+```
+
+
+
 - Create vLLM container for arm64
 
     ```bash

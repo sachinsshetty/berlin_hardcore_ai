@@ -22,7 +22,7 @@ except pynvml.NVMLError as e:
     exit(1)
 
 # Server configuration
-SERVER_URL = "http://localhost:7860/v1/chat/completions"
+SERVER_URL = "http://localhost:9000/v1/chat/completions"
 DURATION_SECONDS = 60  # Shorter for faster sweeps
 
 # Hyperparameter grid
@@ -35,7 +35,7 @@ CSV_FILE = "benchmark_results.csv"
 async def send_request(session, max_tokens, temperature):
     """Send a single async request to the inference server."""
     payload = {
-        "model": "Qwen3-0.6B-Q8_0",
+        "model": "gemma3",
         "messages": [{"role": "user", "content": "Hello, how are you?"}],
         "max_tokens": max_tokens,
         "temperature": temperature
