@@ -41,3 +41,16 @@ python src/simple_benchmark.py
 
 [![Pitch Video](https://img.youtube.com/vi/4DnyKMTQf2w/hqdefault.jpg)](https://youtu.be/4DnyKMTQf2w)
 
+
+vllm serve google/gemma-3-4b-it --served-model-name gemma3 google/gemma-3-1b-it --host 0.0.0.0 --p
+ort 9000 --gpu-memory-utilization 0.8
+
+vllm serve google/gemma-3-1b-it --served-model-name gemma3 google/gemma-3-1b-it --host 0.0.0.0 --p
+ort 9000 --gpu-memory-utilization 0.8
+
+vllm serve Qwen/Qwen3-0.6B --served-model-name gemma3 google/gemma-3-1b-it --host 0.0.0.0 --p
+ort 9000 --gpu-memory-utilization 0.8
+
+vllm serve Qwen/Qwen3-4B --served-model-name gemma3 google/gemma-3-1b-it --host 0.0.0.0 --p
+ort 9000 --gpu-memory-utilization 0.8
+
